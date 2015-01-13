@@ -203,10 +203,14 @@
   </head>
 
   <body ng-controller="MyController">
+  
+  
+<div>
 
+</div>
     <!-- CHAT MARKUP -->
     <div class='example-chat l-demo-container'>
-      <header>Firebase Chat Demo</header>
+      <header></header>
 
       <div class='example-chat-toolbar'>
         <label for='nameInput'>Username:</label>
@@ -224,6 +228,11 @@
         <input ng-model='msg' ng-keydown="addMessage($event)" type='text' id='messageInput'  placeholder='Type a message...'>
       </footer>
     </div>
+    
+    <br>
+    <br>
+    
+    <a href="http://illumanotti.github.io/is429/chat2"> Check out the next person!</a>
 
     <script>
       var myApp = angular.module("myApp", ["firebase"]);
@@ -257,5 +266,7 @@
         }
       ]);
     </script>
+    
+    
   </body>
 </html>
